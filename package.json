@@ -1,0 +1,37 @@
+{
+  "name": "is-arrow-function",
+  "version": "0.0.1",
+  "description": "Checks if value is an arrow function object.",
+  "main": "./dist/isArrowFunction",
+  "author": {
+    "name": "Gajus Kuizinas",
+    "email": "gajus@gajus.com",
+    "url": "http://gajus.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gajus/is-arrow-function"
+  },
+  "engines": {
+    "node": "^5.0.0"
+  },
+  "keywords": [
+    "arrow",
+    "function"
+  ],
+  "scripts": {
+    "pragmatist": "node ./node_modules/.bin/pragmatist --browser",
+    "lint": "npm run pragmatist lint",
+    "test": "npm run pragmatist test",
+    "build": "npm run pragmatist build",
+    "watch": "npm run pragmatist watch",
+    "watch-lint": "npm run pragmatist watch-lint",
+    "watch-test": "npm run pragmatist watch-test",
+    "watch-build": "npm run pragmatist watch-build"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "lodash": "^3.10.1",
+    "pragmatist": "^2.1.1"
+  }
+}
