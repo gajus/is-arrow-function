@@ -1,6 +1,6 @@
 {
   "name": "is-arrow-function",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Checks if value is an arrow function object.",
   "main": "./dist/isArrowFunction",
   "author": {
