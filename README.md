@@ -21,5 +21,5 @@ isArrowFunction(function () {});
 ## Install
 
 ```sh
-npm install is-arrow-function
+npm install isarrowfunction
 ```

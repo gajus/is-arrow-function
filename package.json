@@ -1,5 +1,5 @@
 {
-  "name": "isArrowFunction",
+  "name": "isarrowfunction",
   "version": "0.0.2",
   "description": "Checks if value is an arrow function object.",
   "main": "./dist/isArrowFunction",
