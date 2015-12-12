@@ -1,5 +1,14 @@
 import isFunction from './isFunction';
 
-export default (fn: Object): boolean => {
-    return isFunction(fn) && fn.toString().indexOf('function') !== 0;
+let isRegularFunction;
+
+isRegularFunction = (fn: Object): boolean => {
+    return fn.toString().indexOf('function') === 0;
 };
+
+export default (fn: Object): boolean => {
+    return isFunction(fn) && !isRegularFunction(fn);
+};
+
+
+

@@ -6,7 +6,8 @@ import isArrowFunction from './../src/isArrowFunction';
 
 describe('isArrowFunction()', () => {
     it('identifies when object is an arrow function', () => {
-        expect(isArrowFunction(() => {})).to.equal(true);
+        expect(isArrowFunction(() => {})).to.equal(true, 'plain');
+        expect(isArrowFunction(() => { /* function */ })).to.equal(true, 'comment body');
     });
 
     it('identifies when object is not an arrow function', () => {
