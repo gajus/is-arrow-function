@@ -10,6 +10,8 @@ describe('isArrowFunction()', () => {
     });
 
     it('identifies when object is not an arrow function', () => {
-        expect(isArrowFunction(function () {})).to.equal(false);
+        expect(isArrowFunction(function () {})).to.equal(false, 'regular function');
+        expect(isArrowFunction('function')).to.equal(false, '"function" string');
+        expect(isArrowFunction({toString: () => { return '"function"'; }})).to.equal(false, 'toString');
     });
 });

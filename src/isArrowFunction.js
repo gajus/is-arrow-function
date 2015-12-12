@@ -1,3 +1,5 @@
+import isFunction from './isFunction';
+
 export default (fn: Object): boolean => {
-    return fn.toString().indexOf('function') !== 0;
+    return isFunction(fn) && fn.toString().indexOf('function') !== 0;
 };
