@@ -1,3 +1,5 @@
+import isCallable from 'is-callable';
+
 export default (fn: Object): boolean => {
-    return fn && ({}).toString.call(fn) === '[object Function]';
+    return Boolean(fn && isCallable(fn) && ({}).toString.call(fn) === '[object Function]');
 };

@@ -1,9 +1,12 @@
 import isFunction from './isFunction';
 
-let isRegularFunction;
+let isRegularFunction,
+    functionToString;
+
+functionToString = Function.prototype.toString;
 
 isRegularFunction = (fn: Object): boolean => {
-    return fn.toString().indexOf('function') === 0;
+    return functionToString.call(fn).indexOf('function') === 0;
 };
 
 export default (fn: Object): boolean => {
