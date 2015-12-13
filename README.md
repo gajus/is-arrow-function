@@ -9,7 +9,7 @@ See http://stackoverflow.com/q/34244183/368691 for a discussion regarding the be
 ## Use
 
 ```js
-import isArrowFunction from 'is-arrow-function';
+import isArrowFunction from 'isarrowfunction';
 
 isArrowFunction(() => {});
 // true
